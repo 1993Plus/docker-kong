@@ -9,5 +9,5 @@ RUN set -ex \
     && ln -snf /usr/share/zoneinfo/$TIMEZONE /etc/localtime \
     && echo $TIMEZONE >/etc/timezone \
 ##### Add script.
-    && mkdir /apps
+    && mkdir /apps \
     && curl -o /apps/run.sh https://raw.githubusercontent.com/1993Plus/docker-kong/master/run.sh
